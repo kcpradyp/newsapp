@@ -1,0 +1,140 @@
+.highlighted {
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background-color: var(--color-muted);
+  }
+  .title {
+    font-size: 3.6rem;
+    line-height: 1.2;
+    font-weight: 700;
+    a {
+      color: var(--text-primary);
+      &:hover {
+        text-decoration: none;
+        color: var(--primary-blue);
+      }
+    }
+  }
+}
+.breaking-news {
+  font-size: 0.9rem;
+  line-height: 1;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.1rem;
+  background-color: var(--primary-red);
+  color: var(--primary-white);
+  animation: blink 1000ms infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.news {
+  .meta {
+    font-size: 0.9rem;
+    line-height: 1;
+    font-weight: 500;
+    margin: 0 -0.5rem;
+    span {
+      padding: 0 0.5rem;
+    }
+  }
+  h2 {
+    a {
+      color: var(--text-primary);
+      &:hover {
+        text-decoration: none;
+        color: var(--primary-blue);
+      }
+    }
+  }
+}
+.news-compact {
+  &:first-of-type {
+    padding-top: 0;
+    border-top: 0;
+  }
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-muted);
+  padding-bottom: 0 !important;
+  img {
+    float: left;
+  }
+  .news-content {
+    overflow: hidden;
+  }
+  h2 {
+    font-size: 1.4rem;
+    color: #222;
+  }
+}
+.featured {
+  .block-news {
+    background-color: var(--primary-white-500);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    height: 100%;
+    h2 {
+      font-size: 2rem;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+    .news-content {
+      padding: 1rem;
+    }
+  }
+  .grid-news {
+    display: flex;
+    padding-top: 2rem;
+    &:first-of-type {
+      padding-top: 0;
+    }
+    .news-content {
+      padding-left: 1rem;
+    }
+    h2 {
+      font-size: 1.4rem;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+    img {
+      width: 180px;
+    }
+  }
+}
+
+.var-1 {
+  .news {
+    padding-bottom: 1rem;
+    h2 {
+      font-size: 1.4rem;
+      color: #222;
+    }
+  }
+}
+.var-2 {
+  .news {
+    padding-bottom: 1rem;
+    h2 {
+      font-size: 1.4rem;
+      color: #222;
+    }
+  }
+}
+.var-3 {
+  .news {
+    padding-bottom: 1rem;
+    h2 {
+      font-size: 1.4rem;
+      color: #222;
+    }
+  }
+}
